@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/restoran"
+        android:title="Restoran"
+        app:showAsAction="never" />
+
+    <item
+
+        android:id="@+id/fastfood"
+        android:title="FastFood"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/pizzeria"
+        android:title="Pizzeria"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/pitanja"
+        android:title="Pitanja"
+        app:showAsAction="never"></item>
+</menu>
