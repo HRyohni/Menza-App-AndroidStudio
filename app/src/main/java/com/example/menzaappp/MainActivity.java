@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
     String nazivjela [] = {"kurac","kurac","kurac","kurac"};
     String cijenajela[]= {"pička","pička","pička","pička"};
     String sadrzajjela[]= {"sisa","sisa","sisa","Pšenično brašno,jaja i mlijeko"};
-    TextView Dan;
+    TextView Dan,rucakvecera;
+    ImageView RVslika;
     ListView listView;
 
 
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.restoran:
                  intent=new Intent(MainActivity.this,MainActivity.class);
                 startActivity(intent);
+
                 return true;
 
             case R.id.fastfood:
@@ -77,13 +79,58 @@ public class MainActivity extends AppCompatActivity {
         listView= (ListView) findViewById(R.id.customListView);
         CustomBaseAdapter customBaseAdapter = new CustomBaseAdapter(getApplicationContext(),nazivjela,cijenajela,sadrzajjela);
         listView.setAdapter(customBaseAdapter);
+        // find ids
         Dan = findViewById(R.id.dan);
+        rucakvecera= findViewById(R.id.obrok);
+        RVslika = findViewById(R.id.sun);
+        // Datumi
         Calendar calendar = Calendar.getInstance();
         Date date = calendar.getTime();
-// full name form of the day
-        Dan.setText(new SimpleDateFormat("EEEE", Locale.ENGLISH).format(date.getTime()));
+        Dan.setText(EnglishToCroatian(new SimpleDateFormat("EEEE", Locale.ENGLISH).format(date.getTime())));
     }
 
+    public void rucak_vecera(View v)
+    {
+        if (rucakvecera.getText().equals("Ručak"))
 
+        {
+            RVslika.setImageResource(R.drawable.sun);
+            rucakvecera.setText("Večera");
+        }
+        else
+        {  RVslika.setImageResource(R.drawable.moon);
+            rucakvecera.setText("Ručak");
+        }
+
+    }
+
+    String EnglishToCroatian(String S)
+    { S.equals("null");
+        switch (S)
+        {
+            case "Monday":
+                S="Ponedjeljak";
+                break;
+            case "Tuesday":
+                S="Utorak";
+                break;
+            case "Wednesday":
+                S="Srijeda";
+                break;
+            case "Thursday":
+                S="Četvrtak";
+                break;
+            case "Friday":
+                S="Petak";
+                break;
+            case "Saturday":
+                S="Subota";
+                break;
+            case "Sunday":
+                S="Nedjelja";
+                break;
+        }
+        return S;
+    }
 
 }
