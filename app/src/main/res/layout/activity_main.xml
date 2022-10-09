@@ -103,6 +103,7 @@
         android:layout_marginBottom="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginRight="-7dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/sidebar" />
 
@@ -110,6 +111,7 @@
         android:id="@+id/sun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         android:layout_marginRight="1dp"
         android:layout_marginBottom="152dp"
         android:onClick="rucak_vecera"
