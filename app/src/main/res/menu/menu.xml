@@ -13,18 +13,12 @@
         android:title="FastFood"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/pizzeria"
-        android:title="Pizzeria"
-        app:showAsAction="never" />
+
 
     <item
         android:id="@+id/about"
         android:title="About"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/pitanja"
-        android:title="Pitanja"
-        app:showAsAction="never"></item>
+
 </menu>

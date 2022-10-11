@@ -47,18 +47,12 @@ public class FastFood extends AppCompatActivity {
                 return true;
 
             case R.id.about:
-                intent=new Intent(FastFood.this,MainActivity.class);
+                intent=new Intent(FastFood.this,About.class);
                 startActivity(intent);
                 return true;
 
-            case R.id.pizzeria:
-                intent=new Intent(FastFood.this,MainActivity.class);
-                startActivity(intent);
-                return true;
-            case R.id.pitanja:
-                intent=new Intent(FastFood.this,MainActivity.class);
-                startActivity(intent);
-                return true;
+
+
         }
         return super.onOptionsItemSelected(item);
     }

@@ -48,18 +48,12 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.about:
-                 intent=new Intent(MainActivity.this,MainActivity.class);
+                 intent=new Intent(MainActivity.this,About.class);
                 startActivity(intent);
                 return true;
 
-            case R.id.pizzeria:
-                intent=new Intent(MainActivity.this,MainActivity.class);
-                startActivity(intent);
-                return true;
-            case R.id.pitanja:
-                intent=new Intent(MainActivity.this,MainActivity.class);
-                startActivity(intent);
-                return true;
+
+
         }
         return super.onOptionsItemSelected(item);
     }
@@ -139,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance();
         Date date = calendar.getTime();
         String S = EnglishToCroatian(new SimpleDateFormat("EEEE", Locale.ENGLISH).format(date.getTime()));
-        Toast.makeText(this, S, Toast.LENGTH_SHORT).show();
         Dan.setText(EnglishToCroatian(S));
         String nazivjela []={} ;
         String sadrzajjela[]={};
