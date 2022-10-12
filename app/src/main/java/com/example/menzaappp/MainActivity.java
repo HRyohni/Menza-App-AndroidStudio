@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
                         "Tortelini sa špinatom i umakom od rajčice\n" +
                         "Salata miješana\n" +
                         "Puding"};
-                String Sriosadrzajjela[]= {"Pšenično brašno,jaja i mlijeko"};
+                String Sriosadrzajjela[]= {"Pšenično brašno,jaja i mlijeko","Pšenično brašno,jaja,soju i mlijeko","Pšenično brašno,celer i gorušicu"};
                 String Sricijenajela[]= {"Ručak 1","Ručak 2","Vege"};
                 nazivjela =Srinazivjela;
                 sadrzajjela=Sriosadrzajjela;
